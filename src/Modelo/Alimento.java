@@ -1,4 +1,3 @@
-// Alimento.java
 package Modelo;
 
 public class Alimento extends Producto {
@@ -8,6 +7,6 @@ public class Alimento extends Producto {
 
     @Override
     public void mostrarInformacion() {
-        System.out.println("Alimento: " + nombre + ", Precio: $" + precio);
+        System.out.println("Alimento: " + getNombre() + ", Precio: $" + getPrecio());
     }
 }

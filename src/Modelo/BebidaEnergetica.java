@@ -1,4 +1,3 @@
-// BebidaEnergetica.java
 package Modelo;
 
 public class BebidaEnergetica extends Bebida {
@@ -8,6 +7,6 @@ public class BebidaEnergetica extends Bebida {
 
     @Override
     public void mostrarInformacion() {
-        System.out.println("Bebida Energética: " + nombre + ", Precio: $" + precio);
+        System.out.println("Bebida Energética: " + getNombre() + ", Precio: $" + getPrecio());
     }
 }
