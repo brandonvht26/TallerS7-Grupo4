@@ -26,7 +26,7 @@ public class Controlador {
     }
 
     private void mostrarMenu() {
-        System.out.println("\n--- MENÚ ---");
+        System.out.println("\n------------- MENÚ -------------");
         System.out.println("1. Agregar producto");
         System.out.println("2. Mostrar productos");
         System.out.println("3. Aplicar descuento");

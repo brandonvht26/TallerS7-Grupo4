@@ -1,5 +1,4 @@
 package Modelo;
-// Informacion Modelo
 
 public class Producto {
     private String nombre;
@@ -9,38 +8,32 @@ public class Producto {
         this.nombre = nombre;
         this.precio = precio;
     }
-    public String getNombre()
-    {
+
+    public String getNombre() {
         return nombre;
     }
-    public void setNombre(String nombre)
-    {
+
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public double getPrecio()
-    {
+
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio)
-    {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 
-
-    public void mostrarInformacion()
-    {
+    public void mostrarInformacion() {
         System.out.println("Producto: " + nombre + ", Precio: $" + precio);
     }
 
-    // Informacion Sobrecargada
-    public void aplicarDescuento(double porcentaje)
-    {
+    public void aplicarDescuento(double porcentaje) {
         precio -= precio * (porcentaje / 100);
     }
 
-    public void aplicarDescuento(int cantidad, double porcentaje)
-    {
+    public void aplicarDescuento(int cantidad, double porcentaje) {
         if (cantidad > 1) {
             aplicarDescuento(porcentaje);
         }

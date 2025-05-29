@@ -1,5 +1,4 @@
 package Modelo;
-// Informacion OVERRIDE
 
 public class Bebida extends Alimento {
     public Bebida(String nombre, double precio) {
@@ -7,8 +6,7 @@ public class Bebida extends Alimento {
     }
 
     @Override
-    public void mostrarInformacion()
-    {
+    public void mostrarInformacion() {
         System.out.println("Bebida: " + getNombre() + ", Precio: $" + getPrecio());
     }
 }
