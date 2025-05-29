@@ -5,6 +5,7 @@ public class Bebida extends Alimento {
         super(nombre, precio);
     }
 //SOBREESCRITURA DE PRODUCTO
+
     @Override
     public void mostrarInformacion()
     {
