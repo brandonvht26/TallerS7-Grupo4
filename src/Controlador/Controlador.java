@@ -27,11 +27,7 @@ public class Controlador {
 
     private void mostrarMenu() {
         System.out.println("\n--- MENÚ ---");
-        System.out.println("1. Agregar producto");
-        System.out.println("2. Mostrar productos");
-        System.out.println("3. Aplicar descuento");
-        System.out.println("0. Salir");
-        System.out.print("Seleccione una opción: ");
+        System.out.println("\n1.Agregar producto. \n2.Mostrar productos. \n3.Aplicar descuento  \n0.Salir Seleccione una opcion");
     }
 
     private void agregarProducto() {
