@@ -1,39 +1,47 @@
 package Modelo;
-
+// OVERLOADING
 public class Producto {
     private String nombre;
     private double precio;
 
-    public Producto(String nombre, double precio) {
+    public Producto(String nombre, double precio)
+    {
         this.nombre = nombre;
         this.precio = precio;
     }
 
-    public String getNombre() {
+    public String getNombre()
+    {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
+    public void setNombre(String nombre)
+    {
         this.nombre = nombre;
     }
 
-    public double getPrecio() {
+    public double getPrecio()
+    {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(double precio)
+    {
         this.precio = precio;
     }
 
-    public void mostrarInformacion() {
+    public void mostrarInformacion()
+    {
         System.out.println("Producto: " + nombre + ", Precio: $" + precio);
     }
-
-    public void aplicarDescuento(double porcentaje) {
+// SOBRECARGA DE LOS METODOS
+    public void aplicarDescuento(double porcentaje)
+    {
         precio -= precio * (porcentaje / 100);
     }
 
-    public void aplicarDescuento(int cantidad, double porcentaje) {
+    public void aplicarDescuento(int cantidad, double porcentaje)
+    {
         if (cantidad > 1) {
             aplicarDescuento(porcentaje);
         }
