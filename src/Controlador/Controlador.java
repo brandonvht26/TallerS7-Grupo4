@@ -1,4 +1,3 @@
-// Controlador.java
 package Controlador;
 
 import Modelo.*;
@@ -39,6 +38,7 @@ public class Controlador {
         System.out.println("Tipo (1-Alimento, 2-Bebida, 3-Bebida Energética): ");
         int tipo = scanner.nextInt();
         scanner.nextLine();
+
         System.out.print("Nombre: ");
         String nombre = scanner.nextLine();
         System.out.print("Precio: ");
@@ -55,12 +55,12 @@ public class Controlador {
     private void mostrarProductos() {
         System.out.println("\n--- Lista de productos ---");
         for (Producto p : productos) {
-            p.mostrarInformacion(); // Polimorfismo en acción
+            p.mostrarInformacion(); // polimorfismo
         }
     }
 
     private void aplicarDescuento() {
-        System.out.print("Ingrese porcentaje de descuento: ");
+        System.out.print("Porcentaje de descuento: ");
         double porcentaje = scanner.nextDouble();
         for (Producto p : productos) {
             p.aplicarDescuento(porcentaje);

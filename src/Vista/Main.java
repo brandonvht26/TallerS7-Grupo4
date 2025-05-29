@@ -1,4 +1,3 @@
-// Main.java
 package Vista;
 
 import Controlador.Controlador;
