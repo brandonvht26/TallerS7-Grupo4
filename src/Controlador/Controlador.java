@@ -9,20 +9,20 @@ public class Controlador {
     private Scanner scanner = new Scanner(System.in);
 
     public void iniciar() {
-        boolean salir = false;
-        while (!salir) {
+        int opcion;
+        do {
             mostrarMenu();
-            int opcion = scanner.nextInt();
+            opcion = scanner.nextInt();
             scanner.nextLine(); // limpiar buffer
 
             switch (opcion) {
                 case 1 -> agregarProducto();
                 case 2 -> mostrarProductos();
                 case 3 -> aplicarDescuento();
-                case 0 -> salir = true;
+                case 0 -> System.out.println("Saliendo del programa...");
                 default -> System.out.println("Opción inválida.");
             }
-        }
+        } while (opcion != 0);
     }
 
     private void mostrarMenu() {
